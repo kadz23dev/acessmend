@@ -22,7 +22,7 @@ Use the final custom domain in `BETTER_AUTH_URL`, without a trailing slash. For 
 
 ## 3. Create the Better Auth tables
 
-Before testing sign-in, create the tables represented by `lib/db/schema.ts` in the configured PostgreSQL database. The required tables are `user`, `session`, `account`, `verification`, and `security_run`. Use the Better Auth/Drizzle schema migration workflow for your database provider.
+Before testing sign-in, open the Neon SQL Editor and run the complete schema in [`database/schema.sql`](database/schema.sql). It creates the required `user`, `session`, `account`, `verification`, and `security_run` tables.
 
 ## 4. Deploy and verify
 
